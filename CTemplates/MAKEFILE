@@ -1,0 +1,21 @@
+
+CC=gcc
+CFLAGS=
+OBJS=PROJECT.o
+LIBS=
+
+all: setup build clean
+
+%.o: %.c
+	$(CC) $(CLAGS) -o $@ -c $^
+
+setup:
+	@echo "\nBuilding..."
+
+build: main.o $(OBJS)
+	$(CC) $(CFLAGS) -o bin $^ $(LIBS)
+
+clean:
+	@echo "\nCleaning..."
+	rm -f *.o
+

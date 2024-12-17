@@ -1,0 +1,10 @@
+#include "PROJECT.h"
+
+#include <stdlib.h>
+#include <stdio.h>
+
+
+void filler_function() {
+	printf("Replace me!");
+}
+
